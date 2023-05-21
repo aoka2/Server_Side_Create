@@ -1,3 +1,12 @@
+/**
+ * クラス名：    CustomerSearchAction
+ * 概要　　：    電話番号とカナが一致するものを検索する処理
+ * 作成者名：	 青木 隆展
+ * 作成日　：	 2023/05/21
+ * 修正者名：	 未決
+ * 修正日　：	 未決
+ */
+
 package action;
 
 import java.util.ArrayList;
