@@ -30,7 +30,6 @@ public class CheckTest {
 			} catch(SQLException e) {
 				e.printStackTrace();
 			} catch (ClassNotFoundException e) {
-				// TODO 自動生成された catch ブロック
 				e.printStackTrace();
 			} finally {
 				try{
@@ -48,4 +47,5 @@ public class CheckTest {
 				}
 			}
 		}
+		
 	}
