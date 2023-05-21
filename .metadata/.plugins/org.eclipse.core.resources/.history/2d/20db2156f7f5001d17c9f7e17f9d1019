@@ -1,0 +1,19 @@
+package action;
+
+public class CustomerSearchAction {
+
+	public static String[][] execute(String[] input_info){
+		String[][] tableData = new String[2][2];
+		String[] data = new String[2];
+		try {
+			tableData[0][0] = tableData[0][0].trim();
+			tableData[0][0] = tableData[0][0].replaceAll("　", "");
+			if(tableData[0][0] != "") {
+				
+			}else if(tableData[0][])
+		}catch(Exception e) {
+			
+		}
+		return tableData;
+	}
+}

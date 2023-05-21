@@ -1,0 +1,11 @@
+package action;
+
+public class CustomerSearchAction {
+
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

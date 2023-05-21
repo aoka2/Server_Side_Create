@@ -1,0 +1,51 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
+public class CheckTest {
+
+		public static void main(String[] args) {
+			Connection con = null;
+			PreparedStatement pstmt = null;
+			ResultSet rs = null;
+
+			try{
+				Class.forName("com.mysql.cj.jdbc.Driver");
+				con = DriverManager.getConnection(
+						"jdbc:mysql://localhost:3306/TestDB",
+						"user1", "pass1");
+				pstmt = con
+						.prepareStatement("SELECT * FROM EMPLOYEE;");
+				rs = pstmt.executeQuery();
+
+				while (rs.next()) {
+
+					int id = rs.getInt("ID");
+					String name = rs.getString("NAME");
+					System.out.println("ID :\t" + id);
+					System.out.println("NAME :\t" + name);
+				}
+			} catch(SQLException e) {
+				e.printStackTrace();
+			} catch (ClassNotFoundException e) {
+				// TODO 自動生成された catch ブロック
+				e.printStackTrace();
+			} finally {
+				try{
+					if(rs != null){
+						rs.close();
+					}
+					if(pstmt != null){
+						pstmt.close();
+					}
+					if(con != null){
+						con.close();
+					}
+				} catch(SQLException e) {
+					e.printStackTrace();
+				}
+			}
+		}
+	}

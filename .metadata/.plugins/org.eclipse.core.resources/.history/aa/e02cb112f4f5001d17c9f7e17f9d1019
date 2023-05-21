@@ -1,0 +1,14 @@
+package action;
+
+public class CustomerSearchAction {
+
+	public static String[][] execute(String[] input_info){
+		String[][] tableData = new String[2][2];
+		return tableData;
+		try {
+			data[0][0] = data[0][0].trim();
+		}catch(Exception e) {
+			
+		}
+	}
+}

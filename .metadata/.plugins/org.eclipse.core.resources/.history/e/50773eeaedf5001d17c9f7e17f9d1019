@@ -1,0 +1,10 @@
+package action;
+
+public class CustomerSearchAction {
+
+	public static String[][] execute(String[] input_info){
+		String[2][2] tableData;
+		return tableData;
+	}
+
+}

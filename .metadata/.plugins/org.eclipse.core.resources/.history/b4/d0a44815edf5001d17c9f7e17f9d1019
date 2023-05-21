@@ -1,0 +1,18 @@
+package action;
+
+import java.util.ArrayList;
+import model.Customer;
+import dao.CutomerSearchDBAccess;
+
+
+public class CustomerSearchAction {
+
+	public static void main(String[] args) {
+		
+		public static String[][] Execute(String[] input_info) {
+			
+		}
+
+	}
+
+}

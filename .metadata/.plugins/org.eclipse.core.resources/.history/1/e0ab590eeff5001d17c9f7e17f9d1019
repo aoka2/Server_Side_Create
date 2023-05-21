@@ -1,0 +1,14 @@
+package action;
+
+public class CustomerSearchAction {
+
+	public static String[][] execute(String[] input_info){
+		String[][] tableData = new String[2][2];
+		return tableData;
+		try {
+			
+		}chatch(Exceptin e) {
+			
+		}
+	}
+}
